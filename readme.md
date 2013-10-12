@@ -1,6 +1,6 @@
 # eslint-stylish [![Build Status](https://secure.travis-ci.org/sindresorhus/eslint-stylish.png?branch=master)](http://travis-ci.org/sindresorhus/eslint-stylish)
 
-> Stylish [ESLint](https://github.com/nzakas/eslint/) formatter (reporter)
+> Stylish formatter (reporter) for [ESLint](https://github.com/nzakas/eslint/)
 
 ![screenshot](screenshot.png)
 
