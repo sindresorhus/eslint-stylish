@@ -4,7 +4,7 @@ var table = require('text-table');
 
 function getMessageType(message, rules) {
 	if (message.fatal) {
-		return 'error';
+		return chalk.red('error');
 	}
 
 	var severity = rules[message.ruleId][0] || rules[message.ruleId];
