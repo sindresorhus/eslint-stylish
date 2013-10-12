@@ -1,0 +1,42 @@
+{
+  "name": "eslint-stylish",
+  "version": "0.0.0",
+  "description": "Stylish ESLint formatter (reporter)",
+  "keywords": [
+    "eslint",
+    "formatter",
+    "reporter",
+    "lint",
+    "validate"
+  ],
+  "homepage": "https://github.com/sindresorhus/eslint-stylish",
+  "bugs": "https://github.com/sindresorhus/eslint-stylish/issues",
+  "license": "MIT",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "http://sindresorhus.com"
+  },
+  "files": [
+    "stylish.js"
+  ],
+  "main": "stylish",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sindresorhus/eslint-stylish.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "chalk": "~0.2.1",
+    "text-table": "~0.2.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.13.0",
+    "eslint": "0.1.0-dev"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}
