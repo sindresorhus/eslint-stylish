@@ -30,7 +30,7 @@ eslint --format node_modules/eslint-stylish/stylish.js file.js
 grunt.initConfig({
 	eslint: {
 		options: {
-			format: 'node_modules/eslint-stylish/stylish.js'
+			format: require('eslint-stylish')
 		},
 		target: ['file.js']
 	}
