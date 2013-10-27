@@ -4,7 +4,9 @@
 
 ![screenshot](screenshot.png)
 
-*Compared to the [default formatter](screenshot-default-formatter.png).*
+Compared to the default formatter:
+
+![default formatter](screenshot-default-formatter.png)
 
 
 ## Install
