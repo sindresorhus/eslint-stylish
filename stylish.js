@@ -24,6 +24,10 @@ module.exports = function (results, config) {
 	results.forEach(function (result) {
 		var messages = result.messages;
 
+		if (messages.length === 0) {
+			return;
+		}
+
 		total += messages.length;
 		output += chalk.underline(result.filePath) + '\n';
 

@@ -15,7 +15,7 @@ it('should be used by ESLint', function () {
 		}
 	}
 
-	eslint.execute(['--format', './stylish.js', 'test.js']);
+	eslint.execute(['--format', './stylish.js', 'test.js', 'noop.js']);
 	console.log = _log;
 	assert(ret);
 });
