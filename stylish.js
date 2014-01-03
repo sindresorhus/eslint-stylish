@@ -32,7 +32,7 @@ module.exports = function (results, config) {
 				return [
 					'',
 					chalk.gray('line ' + (message.line || 0)),
-					chalk.gray('col ' + (message.col || 0)),
+					chalk.gray('col ' + (message.column || 0)),
 					getMessageType(message, rules),
 					chalk.blue(message.message)
 				]
