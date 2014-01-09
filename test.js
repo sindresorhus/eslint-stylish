@@ -10,7 +10,7 @@ it('should be used by ESLint', function () {
 	console.log = function (str) {
 		_log(str);
 
-		if (/line 2   col 13  error  'require' is not defined/ig.test(chalk.stripColor(str || ''))) {
+		if (/2:13  error  'require' is not defined/ig.test(chalk.stripColor(str || ''))) {
 			ret = true;
 		}
 	}

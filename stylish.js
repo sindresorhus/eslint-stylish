@@ -35,13 +35,24 @@ module.exports = function (results, config) {
 			messages.map(function (message) {
 				return [
 					'',
-					chalk.gray('line ' + (message.line || 0)),
-					chalk.gray('col ' + (message.column || 0)),
+					message.line || 0,
+					message.column || 0,
 					getMessageType(message, rules),
-					chalk.blue(message.message)
+					chalk.blue(message.message.replace(/\.$/, '')),
+					chalk.gray(message.ruleId)
 				]
-			})
-		) + '\n\n';
+			}),
+			{
+				align: ['', 'r', 'l'],
+				stringLength: function (str) {
+					return chalk.stripColor(str).length;
+				}
+			}
+		).split('\n').map(function (el) {
+			return el.replace(/(\d+)\s+(\d+)/, function (m, p1, p2) {
+				return chalk.gray(p1 + ':' + p2);
+			});
+		}).join('\n') + '\n\n';
 	});
 
 	output += chalk.red.bold('✖ ' + total + ' problem' + (total === 1 ? '' : 's') + '\n');
