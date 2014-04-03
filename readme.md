@@ -15,7 +15,9 @@ Compared to the default formatter:
 
 ## Install
 
-Install with [npm](https://npmjs.org/package/eslint-stylish): `npm install --save-dev eslint-stylish`
+```bash
+$ npm install --save-dev eslint-stylish
+```
 
 
 ## Getting started
@@ -47,4 +49,4 @@ grunt.registerTask('default', ['eslint']);
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)
